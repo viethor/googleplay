@@ -10,4 +10,6 @@ and copy it to your SQOOP_LIB directory.
 To run the code use 
 > ./perform_tasks.sh 
 
+To schedule daily/weekly/... updates copy to cron with corresponding paths
+> cp perform_tasks.sh /etc/cron.daily
 
