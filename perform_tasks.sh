@@ -8,5 +8,6 @@ hive -f hive_analysis.sql > /dev/null
 #pyspark correlation.py
 #echo 'preparing load to external RDB'
 #chmod +x ./sqoop_exp.sh
+hdfs dfs -put sqoop.pwd /tmp
 exec ./sqoop_exp.sh
 echo 'all jobs done' 
