@@ -1,0 +1,10 @@
+setup.py
+GPScorrelation/__init__.py
+GPScorrelation.egg-info/PKG-INFO
+GPScorrelation.egg-info/SOURCES.txt
+GPScorrelation.egg-info/dependency_links.txt
+GPScorrelation.egg-info/not-zip-safe
+GPScorrelation.egg-info/requires.txt
+GPScorrelation.egg-info/top_level.txt
+GPScorrelation/tests/__init__.py
+GPScorrelation/tests/testcorr.py
