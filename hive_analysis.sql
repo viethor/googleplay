@@ -27,7 +27,9 @@ tblproperties ("skip.header.line.count"="1");
 SELECT * FROM googleplay0 WHERE App not like 'Life Made WI-Fi%' ;
 
 DROP TABLE IF EXISTS googleplay;
-CREATE TABLE googleplay as SELECT * FROM googleplay0 WHERE App not like 'Life Made WI-Fi%';
+CREATE TABLE googleplay as SELECT 
+App, Category, Rating, Reviews, AppSize, cast(regexp_replace(regexp_replace(installs,"\\+",""),",","") as int) as Installs, Type, Price, ContentRating, Genres, LastUpdated, CurrentVer, AndroidVer
+ FROM googleplay0 WHERE App not like 'Life Made WI-Fi%';
 
 SELECT * from googleplay limit 5;
 

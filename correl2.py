@@ -15,7 +15,8 @@ a=df_gp.corr()
 a.to_csv("a.csv")
 s = open("a.csv").read()
 t=open("a.csv",'w')
-t.write("col1,col2,col3\nx")
+#t.write("col1,col2,col3\nx")
+t.write("x")
 t.write(s)
 t.close
 
