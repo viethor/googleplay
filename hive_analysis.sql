@@ -110,3 +110,5 @@ SELECT count(distinct category) as count_of_categories from googleplay;
 --FIELDS TERIMATED BY '\t'
 --AS
 --select corr(installs, appsize) from googleplay;
+
+--TODO do it as loop for i, j (columns in table, indexes 1..n) (j>i)
