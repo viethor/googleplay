@@ -5,6 +5,7 @@ hadoop fs -put ./googleplaystore.tsv /tmp/googleplay
 hdfs dfs -ls /tmp/googleplay
 hive -f hive_analysis.sql > /dev/null
 spark-submit correl2.py
+hdfs dfs -put -f a.csv /apps/hive/warehouse/googleplaystore_db.db/task5
 echo 'preparing load to external RDB'
 chmod +x ./sqoop_exp.sh
 hdfs dfs -put sqoop.pwd /tmp
